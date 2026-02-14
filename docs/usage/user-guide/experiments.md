@@ -285,6 +285,7 @@ Request another user to perform an action on a given entry.
    - Review
    - Sign
    - Timestamp
+   - Unarchive
 
 11. Ellipsis menu
 ^^^^^^^^^^^^^^^^^
