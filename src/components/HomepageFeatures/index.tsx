@@ -29,12 +29,11 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Blah',
+    title: 'Open source',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        eLabFTW is 100% open source, licensed under AGPLv3.
       </>
     ),
   },

@@ -93,22 +93,25 @@ const config: Config = {
         label: "Contributing",
         position: "left",
       },
-        {
-          href: 'https://github.com/elabftw/elabftw',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Links',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              href: 'https://www.deltablot.com/posts',
+              label: 'Blog',
+            },
+            {
+              href: 'https://www.deltablot.com/elabftw',
+              label: 'Get hosted',
+            },
+            {
+              href: 'https://www.elabftw.net',
+              label: 'Official Website',
             },
           ],
         },
@@ -133,13 +136,21 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'GitHub',
+              label: 'Documentation source code',
+              href: 'https://github.com/elabftw/documentation',
+            },
+            {
+              label: 'Application source code',
               href: 'https://github.com/elabftw/elabftw',
+            },
+            {
+              label: 'The ELN Consortium',
+              href: 'https://the.elnconsortium.org',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © 2026 Deltablot SAS. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
