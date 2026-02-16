@@ -173,23 +173,68 @@ For both Experiment and Resource entries, the top part of the page displays a to
 </figure>
 
 1. Go back
-^^^^^^^^^^
 Go back to the index page.
 
 2. Mode
-^^^^^^^
 Switch between "edit" mode and "view" mode.
 
 3. Duplicate entry
-^^^^^^^^^^^^^^^^^^
 Create a new entry with the same Title, Tags, text, and links, but with today's date and the Status set as "Running". A pop-up message will ask if you would like to copy the attached files to the duplicated entry. An «I» character is added to the title to indicate that it is a duplicate.
 
 4. Add signature
-^^^^^^^^^^^^^^^^
 Add a signature to prove that this entry has been approved by a referenced human. See :ref:`Signatures documentation <signatures>`.
 
-5. Timestamp
-^^^^^^^^^^^^
+5. RFC3161 Timestamping
+
+6. Blockchain timestamping
+
+7. Export options
+
+8. Pin entry:
+Clicking this icon will make this entry appear on top of the list on the main page (pin entry). Use this to easily access frequently used entries.
+
+9. Lock/unlock entry:
+Use this to lock the entry and prevent further editing. Only an Admin or the user who locked an experiment can unlock it.
+
+10. Request action:
+Request another user to perform an action on a given entry.
+
+- Archive
+- Lock
+- Review
+- Sign
+- Timestamp
+- Unarchive
+
+11. Ellipsis menu
+
+- Transfer ownership: For entries you created, you can transfer ownership to a different user
+- See revisions: View revisions to the main text of the entry
+- See changelog: View the changelog for the entry
+- Archive/Unarchive: Archiving removes the entry from the default list and adds it to the list of archived entries
+- Delete entry: Perform a soft-delete of the entry
+
+
+## Timestamps
+
+### RFC 3161 timesstamping
+
+This is the protocol defined by RFC 3161, here is how it works:
+
+1. we first generate a JSON export of the entity, containing all the data relevant to that entry
+2. we pass it through a cryptographic hash function to get its fingerprint
+3. we request a timestamp token from the Time Stamping Authority (TSA)
+4. we store the JSON file along with the token in an immutable ZIP archive (visible if you display archived attachments of a timestamped entry)
+
+A TSA is a trusted timestamping service that will be used to request a token. Several TSA are already configured in eLabFTW:
+
+- DFN.de (free academic service, default TSA)
+- Universign (eIDAS qualified, paid service)
+- Digicert (free)
+- Sectigo (free)
+- GlobalSign (free)
+- Custom: you can define your own service if necessary
+
 When you click this button, a timestamp archive is created. This is a signed, legally binding snapshot of the entry that is stored alongside the attached files in an immutable archive. Timestamping an entry involves generating a full JSON export of the entry and creating a cryptographic hash of that data. This hash is then sent to a trusted third party: the TimeStamping Authority (TSA).
 
 The TSA acknowledges the existence of the data and sends back a signed token, which serves as proof that the data existed at that specific time. This process follows the :rfc:`3161` standard for Trusted Timestamping.
@@ -208,7 +253,7 @@ This timestamp archive is immutable and cannot be modified or deleted.
   <figcaption>The archived ZIP file.</figcaption>
 </figure>
 
-## Verifying the timestamp
+#### Verifying the timestamp
 
 To verify locally the validity of the timestamp, you can use `openssl` with a command similar to:
 
@@ -250,13 +295,16 @@ Extensions:
 The "Time stamp" line gives you the timestamp time. The "Hash Algorithm" and "Message data" should correspond to the digest of the data file (the .json). Compare it with: `openssl dgst -sha256 /path/to/X-timestamped.json`
 
 
+### Blockchain timestamp
 
-6. Blockchain timestamp
-^^^^^^^^^^^^^^^^^^^^^^^
-This button will perform the same action as a timestamp, except it will use blockchain technology and the service provided by the Bloxberg consortium. You can learn more about it here: [Bloxberg website](https://bloxberg.org/discover/mission/).
+This timestamping method uses the [Bloxberg consortium](https://bloxberg.org) blockchain to timestamp your data. Here is how it works:
+
+1. we first generate a JSON export of the entity, containing all the data relevant to that entry
+2. we pass it through a cryptographic hash function to get its fingerprint
+3. we add it to the Ethereum based blockchain
+4. we store the JSON file along with a PDF certifying our data in an immutable ZIP archive (visible if you display archived attachments of a timestamped entry)
 
 7. Export button
-^^^^^^^^^^^^^^^^
 
 <figure>
   <img src="/img/export-options.png" alt="export options" />
@@ -267,34 +315,6 @@ The Export menu allows you to save the entry in different file formats.
 
 The ELN format is a new file format based on RO-Crate specification. It contains a special file (in JSON-LD) describing the contents of the dataset (one or several Experiments). It is designed and promoted by The ELN Consortium, an association of several ELN vendors that agreed on an interchange format for export/import of datasets. Learn more about it here: [TheELNConsortium on GitHub](https://github.com/TheELNConsortium/).
 
-
-8. Pin entry
-^^^^^^^^^^^^
-Clicking this icon will make this entry appear on top of the list on the main page (pin entry). Use this to easily access frequently used entries.
-
-9. Lock/unlock entry
-^^^^^^^^^^^^^^^^^^^^
-Use this to lock the entry and prevent further editing. Only an Admin or the user who locked an experiment can unlock it.
-
-10. Request action
-^^^^^^^^^^^^^^^^^^
-Request another user to perform an action on a given entry.
-
-   - Archive
-   - Lock
-   - Review
-   - Sign
-   - Timestamp
-   - Unarchive
-
-11. Ellipsis menu
-^^^^^^^^^^^^^^^^^
-
-   - Transfer ownership: For entries you created, you can transfer ownership to a different user
-   - See revisions: View revisions to the main text of the entry
-   - See changelog: View the changelog for the entry
-   - Archive/Unarchive: Archiving removes the entry from the default list and adds it to the list of archived entries
-   - Delete entry: Perform a :ref:`soft-delete <soft-delete>` of the entry
 
 
 ### Date (started on)
