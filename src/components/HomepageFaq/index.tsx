@@ -11,16 +11,6 @@ type FAQItem = {
 
 const FAQ: FAQItem[] = [
   {
-    id: "but-how-is-it-better-than-something-i-can-buy",
-    question: "Is it 100% open source software?",
-    answer: "Yes, eLabFTW is licensed under AGPLv3 license. It is not only free (as in beer), but it is free (as in speech). This means that you can have a look at the code (and improve it) and you can also redistribute the code with your improvements.",
-  },
-  {
-    id: "what-about-patents-and-intellectual-property",
-    question: "What about patents and intellectual property?",
-    answer: "eLabFTW allows legally-binding timestamping of your experiments. With just one click of a mouse, you can timestamp your work. There are currently two strategies available for timestamping: Trusted Timestamping (RFC3161) and Blockchain Timestamping.",
-  },
-  {
      id: "why-use-elabftw",
      question: "Why use eLabFTW?",
      answer: (
@@ -85,6 +75,11 @@ const FAQ: FAQItem[] = [
         </p>
       </>
     ),
+  },
+  {
+    id: "what-about-patents-and-intellectual-property",
+    question: "What about patents and intellectual property?",
+    answer: "eLabFTW allows legally-binding timestamping of your experiments. With just one click of a mouse, you can timestamp your work. There are currently two strategies available for timestamping: Trusted Timestamping (RFC3161) and Blockchain Timestamping.",
   },
   {
     id: "is-this-system-stable-can-i-trust-my-data-with-it",
