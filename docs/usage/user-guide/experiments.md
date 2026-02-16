@@ -150,7 +150,7 @@ Deleted experiments can still be accessed and restored, but they remain read-onl
 You can multiselect deleted experiments to restore them in bulk:
 
 <figure>
-  <img src="/img/deleted-experiments-multiselect.png" alt="deleted experiments multiselect" />
+  <img src="/img/deleted-experiment-multiselect.png" alt="deleted experiments multiselect" />
   <figcaption>Select multiple deleted experiments.</figcaption>
 </figure>
 
@@ -237,7 +237,7 @@ A TSA is a trusted timestamping service that will be used to request a token. Se
 
 When you click this button, a timestamp archive is created. This is a signed, legally binding snapshot of the entry that is stored alongside the attached files in an immutable archive. Timestamping an entry involves generating a full JSON export of the entry and creating a cryptographic hash of that data. This hash is then sent to a trusted third party: the TimeStamping Authority (TSA).
 
-The TSA acknowledges the existence of the data and sends back a signed token, which serves as proof that the data existed at that specific time. This process follows the :rfc:`3161` standard for Trusted Timestamping.
+The TSA acknowledges the existence of the data and sends back a signed token, which serves as proof that the data existed at that specific time. This process follows the RFC 3161 standard for Trusted Timestamping.
 
 The timestamped data and corresponding token are then saved in the "Attached Files" section of the entry as a zip file. This file is initially in an "Archived" state, meaning it is hidden from view by default. To view archived files, click the "Show Archived" button on the right side of the "Uploaded Files" section in edit mode:
 
@@ -317,23 +317,19 @@ The ELN format is a new file format based on RO-Crate specification. It contains
 
 
 
-### Date (started on)
+## Date (started on)
 The date is set to today's date by default. You can edit it as you wish. The effective creation timestamp is stored in the backend database in another (read-only) attribute.
 
-
-### ID
-This attribute is not editable and corresponds to the unique (to that instance) immutable ID of the entry.
-
-### Custom ID
+## Custom ID
 This attribute (`null` by default) can be set as a number after a Category is selected. Custom ID numbers will then be automatically assigned in an incremental fashion when new Experiments with that Category are created. One can also click the "Get next" button to fetch the next available Custom ID for entries of that Category. The Custom ID is displayed before the title.
 
-### Title
+## Title
 This is the title of the Experiment. A duplicated Experiment will have a «I» character appended to the title upon creation.
 
-### Category
+## Category
 You can assign a "Category" to each Experiment. Only an Admin can define the categories that are available for your team to use. Categories can correspond to projects, types of Experiments, and other strategies for grouping Experiment entries. You can easily browse groups of Experiments by Category from the main Experiment page.
 
-### Status
+## Status
 This feature lets you set the 'Status' of an Experiment. The default status options are:
 
 - Running
@@ -343,22 +339,42 @@ This feature lets you set the 'Status' of an Experiment. The default status opti
 
 These Status options can be modified by an admin via the admin panel.
 
-### Tags
+## Tags
 Tags allow users to easily group and sort Experiment entries. You can think of them as folders, but they are more powerful because each Experiment can have many different Tags. The Tag system thus enables efficient cross-searching.
 You can list all Experiments with a given Tag by clicking on the Tag or searching for it in the Tag search bar. To add a Tag to an Experiment entry, type the name of the tag in the Tag input field and press Enter or click anywhere outside the input field. You can add an unlimited number of Tags. Click on an existing Tag to launch a prompt that will allow you to remove it (in edit mode). Tags are common to each team. Autocompletion favors the reuse of existing Tags.
 
 
 ## Permissions
-The "Visibility" and "Can write" menus allow you to control who can access and change a given entry. Click the `Edit` button to view, add, or remove permissions.
+The "Visibility" and "Can write" menus allow you to control who can access and change a given entry.
+
+<figure>
+  <img src="/img/user-permissions.webp" alt="permissions" />
+  <figcaption>Permissions.</figcaption>
+</figure>
+
+Click the `Plus` icon to view, add, or remove permissions. A modal window will open:
+
+<figure>
+  <img src="/img/user-permissions-edit.webp" alt="permissions edit" />
+  <figcaption>Permissions edition modal window.</figcaption>
+</figure>
+
+Select a base permission to extend or restrict the current settings, and optionally, add permissions to entire teams, teamgroups, or individual users.
 
 ## Main text
 This is the space to freely describe your experimental setting, procedure, results, and any other information you wish to include about your research. In this rich text editor, you can add text with various formatting options, create tables, and add images, links, etc…
 
-   .. figure:: img/tinymce-editor.png
-      :align: center
-      :alt: Tinymce editor
+<figure>
+  <img src="/img/user-tinymce.webp" alt="tinymce" />
+  <figcaption>Main text editor.</figcaption>
+</figure>
 
-      Tinymce editor
+After clicking the "eye" icon for preview:
+
+<figure>
+  <img src="/img/user-tinymce-preview.webp" alt="tinymce preview" />
+  <figcaption>Main text editor.</figcaption>
+</figure>
 
 ### Inserting an image
 
@@ -526,5 +542,4 @@ Changes made to any other field are saved automatically, or saved when you click
 In the bottom right part of the Experiment, you can see something like: «Unique elabid: 20150526-e72646c3ecf59b4f72147a52707629150bca0f91». This number is unique to each Experiment, and immutable (won't ever change). You can use it to reference an Experiment with an external database.
 
 ## Comments
-People can leave comments on Experiments. Not everyone can edit your Experiment, but they can leave a comment. The owner of the Experiment will receive an email if someone comment their Experiment.
-
+People can leave comments on Experiments or Resources. Not everyone can edit your Experiment, but they can leave a comment if they have read access. The owner of the entry along with any other user part of the discussion will receive a notification if someone leaves a comment.
