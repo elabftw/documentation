@@ -1,6 +1,6 @@
-
-import React, {type ReactNode} from 'react';
+import React, {useEffect, type ReactNode} from 'react';
 import Details from '@theme/Details';
+import {useLocation} from '@docusaurus/router';
 import styles from './styles.module.css';
 
 type FAQItem = {
@@ -416,7 +416,41 @@ eLabFTW provides a number of features that help with compliance (audit trail, el
   },
 ];
 
+function openAndScrollToHash(hash: string) {
+  const id = (hash || '').slice(1);
+  if (!id) return;
+
+  const details = document.getElementById(id) as HTMLDetailsElement | null;
+  if (!details) return;
+
+  // If Docusaurus thinks it's collapsed, trigger its own handler by clicking summary
+  const collapsed = details.getAttribute('data-collapsed') === 'true';
+  const summary = details.querySelector('summary') as HTMLElement | null;
+
+  if (collapsed && summary) {
+    summary.click();
+  } else {
+    // Fallback for native behavior
+    details.open = true;
+  }
+
+  details.scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
 export default function HomepageFAQ(): ReactNode {
+  const location = useLocation();
+   useEffect(() => {
+    if (!location.hash) return;
+
+    // Run after DOM commit; try a couple of times in case of hydration/layout timing
+    const t1 = window.setTimeout(() => openAndScrollToHash(location.hash), 0);
+    const t2 = window.setTimeout(() => openAndScrollToHash(location.hash), 50);
+
+    return () => {
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
+    };
+  }, [location.hash]);
   return (
     <section className={styles.faqSection}>
       <div className="container">
@@ -427,13 +461,14 @@ export default function HomepageFAQ(): ReactNode {
             <Details
               key={item.id}
               id={item.id}
-              onToggle={() => {
-                if (typeof window !== 'undefined') {
+              summary={item.question}
+              className={styles.item}
+               onToggle={(e) => {
+                const el = e.currentTarget as HTMLDetailsElement;
+                if (el.open) {
                   window.history.replaceState(null, '', `#${item.id}`);
                 }
               }}
-              summary={item.question}
-              className={styles.item}
             >
               {item.answer}
             </Details>

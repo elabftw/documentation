@@ -14,4 +14,6 @@
 
 .item {
   margin-bottom: 1rem;
+  /* Prevent the fixed navbar from covering the anchored FAQ item */
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 1rem);
 }
