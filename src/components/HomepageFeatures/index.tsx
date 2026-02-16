@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        The comprehensive documentation and application ergonomy makes it accessible to all.
+        The detailed documentation and ergonomic interface make eLabFTW accessible to a wide variety of users.
       </>
     ),
   },
@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        eLabFTW is 100% open source, licensed under AGPLv3.
+        eLabFTW is 100% open source and community-driven, licensed under AGPLv3.
       </>
     ),
   },

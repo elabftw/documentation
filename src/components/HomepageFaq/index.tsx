@@ -441,20 +441,12 @@ export default function HomepageFAQ(): ReactNode {
   const location = useLocation();
    useEffect(() => {
     if (!location.hash) return;
-
-    // Run after DOM commit; try a couple of times in case of hydration/layout timing
-    const t1 = window.setTimeout(() => openAndScrollToHash(location.hash), 0);
-    const t2 = window.setTimeout(() => openAndScrollToHash(location.hash), 50);
-
-    return () => {
-      window.clearTimeout(t1);
-      window.clearTimeout(t2);
-    };
+    openAndScrollToHash(location.hash)
   }, [location.hash]);
   return (
     <section className={styles.faqSection}>
       <div className="container">
-        <h2 className={styles.title}>FAQ</h2>
+        <h2 className={styles.title}>Frequently Asked Questions</h2>
 
         <div className={styles.list}>
           {FAQ.map((item) => (
