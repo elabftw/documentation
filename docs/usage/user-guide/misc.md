@@ -3,7 +3,9 @@ sidebar_position: 7
 title: Miscellaneous
 ---
 
-# How to group Experiments into Projects?
+# Miscellaneous
+
+## How to group Experiments into Projects?
 
 There are several options:
 
@@ -30,7 +32,7 @@ In a traditional folder structure, you would need to search for it in almost eac
 
 Enter **Tags**.
 
-## Tags
+### Tags
 
 Tags are a way to label your Experiments (and database objects) with defined keywords and you can have as many as you want!
 
@@ -41,7 +43,7 @@ Tags are a way to label your Experiments (and database objects) with defined key
 
 Now with the Experiments correctly tagged, finding them through different search angles becomes easy! You can search for one Tag or many Tags directly from the main page.
 
-## Favorite Tags
+### Favorite Tags
 
 Over time, you will have some Tags that become your favorites, as they are always the ones you look for for a set of Experiments.
 
@@ -54,7 +56,7 @@ Since version 4.2.0 it is possible to define "Favorite Tags" that will appear in
 
 Note that if you use a "Favorite Tag" filter and then create an Experiment, it will be tagged automatically with that Tag.
 
-## Using Projects
+### Using Projects
 
 There is also another way to group Experiments together, that you can use along with Tags. It's using a Resource of Category: Project.
 
@@ -62,31 +64,10 @@ Go to the Admin Panel and create a Resource Category: "Project". Go to the Resou
 
 Make sure to create Experiments templates that already link to that Project so the link will always be here when the Experiment is created by a User.
 
-## Using Categories
+### Using Categories
 Among a Team, Users and Admins can define several Experiments Categories. It is a quick and easy way to group Experiments together.
 
-# Miscellaneous
-
-## To-Do List
-
-From the main Experiments or Resources pages, press `t` to show your "To-Do List". You can also access the "To-Do List" by clicking on the icon at the top left side of the screen.
-
-## Tips
-
-You can export Experiments in .zip. If the Experiment was timestamped you will find in the archive the timestamped pdf and the corresponding .asn1 token.
-
-You can export and import items from the database (it can be several items).
-
-
-.. raw:: html
-
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/maylkcTAarg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-In the editor, press Ctrl+shift+d to get today's date inserted at cursor position.
-
-.. _signatures:
-
-# Signatures
+## Signatures
 
 Signatures are important in many contexts, such as scientific research.
 
@@ -94,17 +75,17 @@ A signature can prove that this particular *data* has been approved by this part
 
 eLabFTW allows you to have three different types of signatures.
 
-## Handwritten signatures
+### Handwritten signatures
 
 In your Settings page, check the setting: "Enable french style signature block in PDF Export", from the "PDF Configuration" section of the "General" tab. Now, when you generate a PDF, there will be a dedicated section at the bottom to allow signatures of the author and an observer.
 
-## Simple signatures
+### Simple signatures
 
 In an authenticated application such as eLabFTW, where all Users are identified and vetted, a signature can be clicking a checkbox, leaving a comment, or performing an action such as locking an Experiment.
 
 The level of trust you can associate to this action is reinforced by using multi-factor authentication.
 
-## Advanced cryptographic signatures
+### Advanced cryptographic signatures
 
 Since version 5.1, an advanced signature mechanism exists for eLabFTW. It uses the highly secure Ed25519 public-key signature system and is compatible with `minisign <https://jedisct1.github.io/minisign/>`_.
 
@@ -188,7 +169,7 @@ This is stored in an immutable `.zip` file, and an immutable comment is added to
 
 `signify` from OpenBSD was also considered, and it uses roughly the same format, but doesn't support trusted comments which is a very useful feature.
 
-# Tracking changes
+## Tracking changes
 
 In eLabFTW, changes are tracked with a different granularity depending on the instance configuration and the type of change.
 
@@ -199,22 +180,22 @@ You can access the Changelog or the Revisions through the ellipsis menu (three d
 All administrative changes, such as creating a new User, promoting a User to Admin, assigning a User in a team, and changing an instance parameter are logged in the Audit logs database table, and visible to the Sysadmin from the Audit Logs tab in Sysconfig panel.
 
 
-# Soft delete mechanism
+## Soft delete mechanism
 
 eLabFTW uses a soft-delete mechanism for entries. When you delete an experiment, a resource, an attached file or a template, it is simply marked as being deleted: its State changes from Normal to Deleted (another possible State would be Archived). This means the entry will still be accessible in the backend database as a deleted entity, or through listing Deleted entries using advanced filters (State).
 
 Entries can be restored by accessing them directly.
 
 
-# Sharing with external collaborators
+## Sharing with external collaborators
 If you want to share your results with an external collaborator, you have a few options:
 
-## Option 1: Export and send
+### Option 1: Export and send
 This option is pretty straightforward, you export your entry into a PDF or ZIP archive and send this by email or other means to your collaborator.
 
 If course, this option has its limitations, and is not always the best suited approach, but works 100% of the time.
 
-## Option 2: Allow anonymous access
+### Option 2: Allow anonymous access
 It is possible to allow Anonymous access to an eLabFTW installation, but this functionality is disabled by default. The Sysadmin must check this parameter from the Sysconfig Panel:
 
 <figure>
@@ -233,7 +214,7 @@ Sharing this link will give read access to the recipient. If the checkbox is unc
 
 For this feature to work, the instance must be accessible from an external network.
 
-## Option 3: Share with a user on the instance
+### Option 3: Share with a user on the instance
 You might want to share some entries with a specific user, group, or team present on the Instance. For that, go to the Permissions section of an entry:
 
 <figure>
