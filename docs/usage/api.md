@@ -39,9 +39,10 @@ Mainly, the API is using HTTP verbs for different actions. `GET` to read things 
 
 For instance, to create an experiment:
 
-.. code-block:: bash
 
-   curl -I -H "Content-Type: application/json" -H "Authorization: $KEY" -X POST https://eln.example.org/api/v2/experiments
+~~~
+curl -I -H "Content-Type: application/json" -H "Authorization: $KEY" -X POST https://eln.example.org/api/v2/experiments
+~~~
 
 The response headers contain the URL to the created resource in the `location` header:
 
