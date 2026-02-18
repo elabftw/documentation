@@ -20,4 +20,4 @@ jobs:
         uses: codespell-project/actions-codespell@v2
         with:
           # this file contains typos by design
-          skip: acl-evil.lst
+          skip: acl-evil.lst,package-lock.json
