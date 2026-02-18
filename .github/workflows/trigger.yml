@@ -1,0 +1,14 @@
+name: Trigger doc rebuild
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  buildandpush:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send request to webhook to trigger update of doc
+        run: |
+          curl -v -H 'X-Hook-Secret: ${{ secrets.HOOK_SECRET }}' ${{ secrets.HOOK_URL }}

@@ -7,11 +7,9 @@ title: Developer documentation
 
 ## Word of caution
 
-It is possible that the gap between the current development version and the current stable version will render this documentation obsolete in parts. It is highly recommended to use the `next` branch of `elabftw/elabdoc`, which is published here: https://doc.elabftw.net/next/.
+It is possible that the gap between the current development version and the current stable version will render this documentation obsolete in parts. It is highly recommended to use the `next` branch of `elabftw/documentation`.
 
-=> Read this page on the `next` branch: https://doc.elabftw.net/next/contributing.html#contributing-to-the-code
-
-Another thing is that this documentation is targeted towards GNU/Linux users. If you are on Windows or MacOS, you will need to adapt some things. We currently do not provide detailed documentation for Windows or MacOS users, as we are avid open source software aficionados, and consider these operating systems as malware.
+Another thing is that this documentation is targeted towards GNU/Linux users. If you are on Windows or MacOS, you will need to adapt some things. We currently do not provide detailed documentation for Windows or MacOS users, as we are avid open source software aficionados, and consider these operating systems as spyware.
 
 ## Introduction
 
@@ -69,7 +67,7 @@ Use vanilla JS and ban the use of jQuery selectors or functions.
 * add a plugin to your editor to show PSR-1 errors
 * see `editorconfig.org <https://editorconfig.org/>`_ and configure your editor to follow the settings from `.editorconfig`
 * remove BOM
-* if you want to work on the documentation, clone the `elabdoc repo <https://github.com/elabftw/elabdoc>`_
+* if you want to work on the documentation, clone the `documentation repo <https://github.com/elabftw/documentation>`_
 * if you want to make backups of your dev install, you'll need to edit `elabctl.conf` to point to the correct folders/config files. See `example <https://github.com/elabftw/elabctl/blob/master/elabctl.conf>`_
 * in php camelCase; in html, dash separation for CSS stuff, camelCase for JS
 * check the commands in the "scripts" part of the `package.json` file, a lot of nice things in there ;)

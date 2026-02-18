@@ -9,7 +9,7 @@ This guide is for Users. See also the guides for [Admins](/docs/usage/admin-guid
 
 There are two main types of entries in eLabFTW: Experiments and Resources.
 
-Experiments are records of scientific investigations. Resources are things that exist in the lab, such as Plasmids, Chemicals or Equipments.
+Experiments are records of scientific investigations. Resources are things that exist in the lab, such as Plasmids, Chemicals or Equipment.
 
 While similar, they differ in the following ways:
 

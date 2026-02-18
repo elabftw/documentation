@@ -153,7 +153,7 @@ const FAQ: FAQItem[] = [
       <>
         <p>
           Yes. You can import data into the database from a file, either from the web interface, or by using a dedicated import script. See{" "}
-          <a href="/docs/tutorials/import-csv">Tutorial to import data programatically</a>.
+          <a href="/docs/tutorials/import-csv">Tutorial to import data programmatically</a>.
         </p>
       </>
     ),
