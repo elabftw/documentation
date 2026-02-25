@@ -17,3 +17,6 @@ A recording of this workshop, suitable to beginners, is available in this video:
 
 - [Repository link](https://github.com/elabftw/api-workshop/?tab=readme-ov-file#elabftw-api-workshop)
 - [Endpoints documentation](https://doc.elabftw.net/api/v2/)
+- [Python library repository](https://github.com/elabftw/elabapi-python)
+- [HTML documentation](https://doc.elabftw.net/api/elabapi-html/)
+
