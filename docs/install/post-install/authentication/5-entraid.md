@@ -19,14 +19,14 @@ Set the name to eLabFTW or whatever you prefer.
 
 Select supported account types and for the Redirect URI, add your eLabFTW FQDN followed by: `/index.php?acs`.
 
-This should give you an App ID (UUIDv4).
+This should give you an App ID (GUID).
 
 ### Setup SSO
 
 From the SAML-based Sign-on panel register:
 
-* Identifier (Entity ID): https://elabftw.example.com
-* Reply URL: https://elabftw.example.com/index.php?acs
+* Identifier (Entity ID): `https://<your-elabftw-fqdn>`
+* Reply URL: `https://<your-elabftw-fqdn>/index.php?acs`
 
 
 ### Add users
@@ -45,4 +45,4 @@ Configure the attributes like this:
 
 * Email: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name
 * Firstname: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname
-* Lastname: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name
+* Lastname: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname
