@@ -7,7 +7,7 @@ title: Developer documentation
 
 ## Word of caution
 
-It is possible that the gap between the current development version and the current stable version will render this documentation obsolete in parts. It is highly recommended to use the `next` branch of `elabftw/documentation`.
+It is possible that the gap between the current development version and the current stable version will render this documentation obsolete in parts. As we currently have no versioning of the doc to match stable releases of eLabFTW. I don't know, just do your best.
 
 Another thing is that this documentation is targeted towards GNU/Linux users. If you are on Windows or MacOS, you will need to adapt some things. We currently do not provide detailed documentation for Windows or MacOS users, as we are avid open source software aficionados, and consider these operating systems as spyware.
 
@@ -32,12 +32,9 @@ The rest of this documentation is about elabftw/elabftw.
 
 ## Note about branches
 
-The repository contains (at least) 3 branches:
+The target for Pull Requests is the `master` branch.
 
-* The `master` branch points to the latest released version and should always be in working state. It can contain alpha, beta or rc versions.
-* The `next` is used to work on bugfixes for the stable release. If you wish to make a bugfix PR, this is the branch that you should target (if hypernext is far from it).
-* The `hypernext` branch is the dev branch, it might contain bugs and unfinished work, never use it in production! It is the latest version of the code and the one you should work against for new features or non critical bugfixes. It is a very active branch, so make sure to pull from upstream often so your fork doesn't stray too far.
-
+Releases get tagged from a `release/X.Y` branch. And patch releases are built from cherry-picking bugfixes commits in `master`.
 
 ### Code organization
 
@@ -130,14 +127,13 @@ Here are some ground rules for exceptions thrown in the code:
 ## Making a pull request
 
 1. Before working on a feature, it's a good idea to open an issue first to discuss its implementation
-1. Create a branch from **hypernext**
+1. Create a branch from **master**
 1. Work on a feature
 1. Make sure `yarn full` exits with no errors
-1. Make a pull request on GitHub to include it in **hypernext**
+1. Make a pull request on GitHub to include it in **master**
 
 ~~~bash
 cd $dev/elabftw
-# create your feature branch from the hypernext branch
 git checkout -b my-feature
 # modify the code, commit and push to your fork
 # go to github.com and create a pull request
@@ -261,7 +257,7 @@ Locally: current workaround:
 
 ~~~bash
 cd /tmp
-git clone -b hypernext https://github.com/elabftw/elabftw
+git clone https://github.com/elabftw/elabftw
 cd elabftw
 npm i --no-save --no-lockfile cypress cypress-terminal-report
 ./node_modules/.bin/cypress open
