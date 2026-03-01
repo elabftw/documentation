@@ -7,7 +7,7 @@ title: Developer documentation
 
 ## Word of caution
 
-It is possible that the gap between the current development version and the current stable version will render this documentation obsolete in parts. It is highly recommended to use the `next` branch of `elabftw/documentation`.
+It is possible that the gap between the current development version and the current stable version will render this documentation obsolete in parts. As we currently have no versioning of the doc to match stable releases of eLabFTW. I don't know, just do your best.
 
 Another thing is that this documentation is targeted towards GNU/Linux users. If you are on Windows or MacOS, you will need to adapt some things. We currently do not provide detailed documentation for Windows or MacOS users, as we are avid open source software aficionados, and consider these operating systems as spyware.
 
