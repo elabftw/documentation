@@ -13,9 +13,13 @@ This page documents how to backup an existing eLabFTW installation. It is import
 
 There are basically three things to backup:
 
-- The MySQL database (by default in `/var/elabftw/mysql`)
-- The uploaded files (by default in `/var/elabftw/web`)
-- Your configuration file (by default `/etc/elabftw.yml`)
+- The MySQL database (by default in `/var/elabftw/mysql`) => handled by `elabctl` through `mysqldump`
+- The uploaded files (by default in `/var/elabftw/web`) => handled by `elabctl` through `borgbackup`
+- Your configuration file (by default `/etc/elabftw.yml`) => **NOT** handled by `elabctl` on purpose, read below
+
+Important note: the configuration file is **NOT** backuped along with the data. This is done to avoid having secrets (such as the `SECRET_KEY` bundled with the data). You are responsible from handling backups of your configuration values(such as database password/ip). This is kept separate on purpose. We highly recommend using configuration management tools such as `ansible` to manage this aspect.
+
+Note that in the event where you lose your configuration values, this will not impact your data. Only the SMTP password and optional TSA password will need to be re-encrypted with a new `SECRET_KEY`. And when redeploying, you will use a different `DB_PASSWORD`, but this has no impact on the actual data. As such, configuration values are not critical to the integrity of your backups.
 
 ## How to backup a Docker installation
 
