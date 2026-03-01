@@ -43,10 +43,6 @@ cd $dev
 
 ~~~bash
 git clone git@github.com:<YOUR USERNAME>/elabftw.git
-# checkout the hypernext branch because this is where dev happens
-cd elabftw
-git checkout hypernext
-cd ..
 ~~~
 
 ## Install elabctl
@@ -77,7 +73,7 @@ curl -so docker-compose.yml "https://get.elabftw.net/?config"
 ~~~
 
 * Edit the `docker-compose.yml` configuration file
-* For the web container, use "image: elabftw/elabimg:hypernext" so you are using the latest container image for dev
+* For the web container, use "image: elabftw/elabimg:edge" so you are using the latest container image for dev
 * Set `DEV_MODE` to `true`
 
 :::note
