@@ -46,13 +46,68 @@ borg init -e repokey-blake2 /path/to/elabftw-borg-repo
 borg init -e repokey-blake2 someserver:/path/to/elabftw-borg-repo
 ~~~
 
-It is necessary to use the `elabctl.conf` configuration file (available [here](https://raw.githubusercontent.com/elabftw/elabctl/master/elabctl.conf)). Place this file in `/root/.config/elabctl.conf` and make sure to specify the ...
+It is necessary to use the `elabctl.conf` configuration file (available [here](https://raw.githubusercontent.com/elabftw/elabctl/master/elabctl.conf)). Place this file in `/root/.config/elabctl.conf` and make sure to specify the settings correctly.
 
-### Automate backups
+
+#### Test
+
+Try the backup with:
+
+~~~bash
+elabctl backup
+~~~
+
+You can also use `mysql-backup` to only backup the MySQL database:
+
+~~~bash
+elabctl mysql-backup
+~~~
+
+You can also use `borg-backup` to only backup the uploaded files:
+
+~~~bash
+elabctl borg-backup
+~~~
+
+::::warning
+Important: verify that all the files are correctly created and that you will be able to restore from a backup!
+::::
+
+### Without elabctl
+
+You're on your own. Use your favorite tools to backup the MySQL database and uploaded files.
+
+## Making it automatic using cron
+
+A good backup is automatic. Use a cronjob or a systemd timer job to trigger the backup job regularly (ideally daily).
+
+### With a cronjob
+
+If you have the traditional cron service running, try::
+
+~~~bash
+crontab -e
+~~~
+
+This will open the cronjob file in edit mode.
+
+Add this line at the bottom::
+
+~~~cron
+00 04 * * * /path/to/elabctl backup
+~~~
+
+This will run the script everyday at 4am. Make sure to write the full path to `elabctl` as it might not be in the `$PATH` for cron.
+
+### With a systemd timer
+
+Some systems don't use the traditional cron service, so instead of installing it, you should use a systemd timer (provided systemd is your init system, which is quite likely).
+
+You will need to create two files, one .service and one .timer.
 
 Content of `/etc/systemd/system/elabftw-backup.service`:
 
-~~~ini
+~~~ini title="/etc/systemd/system/elabftw-backup.service"
 [Unit]
 Description=Backup eLabFTW data
 
@@ -68,7 +123,7 @@ WantedBy=multi-user.target
 
 Content of `/etc/systemd/system/elabftw-backup.timer`:
 
-~~~ini
+~~~ini title="/etc/systemd/system/elabftw-backup.timer"
 [Unit]
 Description=Backup eLabFTW data
 
