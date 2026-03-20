@@ -198,7 +198,9 @@ To also import locations/containers with quantity and units, use columns:
 - `quantity`: this should be a number corresponding to the quantity stored at the location
 - `unit`: this should be a value such as μg, mg, g, kg, mL, L
 
-Other columns such as `inchi`, `smiles`, `molecularweight`, `molecularformula` will also match and be imported to the compound. The full list of columns matched is accessible `here <https://github.com/elabftw/elabftw/blob/master/src/Commands/ImportCompoundsCsv.php#L57>`_.
+Other columns such as `inchi`, `smiles`, `molecularweight`, `molecularformula` will also match and be imported to the compound.
+
+Supported CSV columns: `cas`, `chebi_id`, `chembl_id`, `dea_number`, `drugbank_id`, `dsstox_id`, `ec_number`, `hmdb_id`, `inchi`, `inchikey`, `iupacname`, `is_antibiotic`, `is_antibiotic_precursor`, `is_cmr`, `is_controlled`, `is_corrosive`, `is_drug`, `is_drug_precursor`, `is_explosive`, `is_explosive_precursor`, `is_flammable`, `is_gas_under_pressure`, `is_hazardous2env`, `is_hazardous2health`, `is_nano`, `is_oxidising`, `is_radioactive`, `is_serious_health_hazard`, `is_toxic`, `is_ed2health`, `is_ed2env`, `is_pbt`, `is_pmt`, `is_vpvb`, `is_vpvm`, `kegg_id`, `metabolomics_wb_id`, `molecularformula`, `molecularweight`, `name`, `nci_code`, `nikkaji_number`, `pharmgkb_id`, `pharos_ligand_id`, `pubchemcid`, `rxcui`, `smiles`, `unii`, `wikidata`, `wikipedia`.
 
 Once you have your CSV file ready, send it to your Sysadmin and let them know if it should be imported with PubChem and if you want to create Resources, too.
 
