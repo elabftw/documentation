@@ -143,13 +143,14 @@ git checkout -b my-feature
 ## Adding a lang
 
 * Add lang on poeditor.com
-* Get .po
-* Save it in a new folder in `src/langs`
+* Create a new folder in `src/langs`: `mkdir -p src/langs/<xx_YY>/LC_MESSAGES`
+* Get the .po export from poeditor
+* Save it as `messages.po` in that folder
 * Open with poeditor and fix issues
 * Save the .mo
 * Upload .po fixed to poeditor
 * Add it to `Enums/Language.php`
-* Get the tinymce translation from `this repository <https://github.com/mklkj/tinymce-i18n/tree/master/langs6>`_
+* Get the tinymce translation from [this repository](https://github.com/mklkj/tinymce-i18n/tree/master/langs6)
 * Rename file to 4 letters code in `src/js/tinymce-langs`
 * Edit first line of file to match code
 * Import it in `tinymce.ts`
@@ -159,11 +160,8 @@ git checkout -b my-feature
 
 ## Adding a new term for js i18n
 
-These steps are overly complicated and should be made automatically ideally.
-
-* Add the new term to src/langs/js-strings.php and give it an identifier
-* Open all files in `src/ts/langs/*.ts` and add it there with translation for all
-* Import i18next in the corresponding ts file and use `i18next.t('string-id')`
+* Add the new term to src/Elabftw/i8n4Js.php in the `getTerms()` function returned array
+* Run `bin/console dev:i18n4js`
 
 ## Accessing Docker MySQL database with phpmyadmin
 
