@@ -501,7 +501,7 @@ The number of links is unlimited.
 
 In the Main text type # and begin to type the title of the entry you want to link. After three characters, an autocompletion list will appear. Select the entry you want to link and press enter. This entry will automatically be added to the Linked Experiments/Resources section as well as in the text editor with a hyperlink to the linked entry.
 
-In the Linked Experiments/Resources section, type the title of the entry you want to link in the adequate section. Like in the text editor an autocompletion list will appear. Select the entry you want to link and press enter. This entry will be automatically be added to the Linked Experiments/Resources section.
+In the Linked Experiments/Resources section, type the title of the entry you wish to link in the appropriate section. Like in the text editor, an autocompletion list will appear. Select the desired entry and press Enter. This entry will automatically be added to the Linked Experiments/Resources section.
 
 The linked Experiments/Resources section can be used to view the Resources or Experiments that are linked to a given entry. For example, you can view all the Experiments that use a particular Resource by looking at the Linked Experiments section in the entry for that Resource.
 
