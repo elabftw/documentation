@@ -495,9 +495,15 @@ This feature is currently in **BETA** and should be used with caution, when mani
 See more from the [jspreadsheet-ce documentation](https://jspreadsheet.com/docs/v8/formulas).
 
 ## Linked Resources/Experiments
-You can link a Resource or Experiment entry to another Experiment or Resource entry. Just begin to type the name of the entry you want to link in the text editor, Linked Resources field, or Linked Experiments field, and an autocompletion list will appear. Select the entry you want to link and press enter. If you link an entry from the text editor, it will automatically be added to the Linked Experiments/Resources section. The number of links is unlimited.
 
-This feature can be used to view the Resources or Experiments that are linked to a given entry. For example, you can view all the Experiments that use a particular Resource by looking at the Linked Experiments section in the entry for that Resource.
+You can link a Resource or Experiment entry to another Experiment or Resource entry. 
+The number of links is unlimited.
+
+In the Main text, type `#` and begin typing the title of the entry you want to link. After three characters, an autocompletion list will appear. Select the desired entry and press Enter. This entry will automatically be added to the Linked Experiments/Resources section and inserted in the text editor as a hyperlink to the linked entry.
+
+In the Linked Experiments/Resources section, type the title of the entry you wish to link in the appropriate section. Like in the text editor, an autocompletion list will appear. Select the desired entry and press Enter. This entry will automatically be added to the Linked Experiments/Resources section.
+
+The linked Experiments/Resources section can be used to view the Resources or Experiments that are linked to a given entry. For example, you can view all the Experiments that use a particular Resource by looking at the Linked Experiments section in the entry for that Resource.
 
 You can also use this feature to organize entries by project, sort of like a folder. For example, you can create a Resource entry for a given project and link all the Experiments and Resources that are associated with that project.
 
