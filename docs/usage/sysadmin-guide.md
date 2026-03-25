@@ -216,9 +216,9 @@ To monitor the nginx, the php-fpm and the MySQL connection, use `/healthcheck.ph
 
 ### Metrics
 
-To gather metrics from the php-fpm service, use `/php-status`, which replies with information about php-fpm processes. See the `PHP FPM Status page documentation <https://www.php.net/manual/en/fpm.status.php>`_ for more details.
+To gather metrics from the php-fpm service, use `/php-status`, which replies with information about php-fpm processes. See the [PHP FPM Status page documentation](https://www.php.net/manual/en/fpm.status.php) for more details.
 
-To gather metrics from the nginx service, use `/nginx-status`, which replies with information about nginx processes. See the `Nginx status module documentation <https://nginx.org/en/docs/http/ngx_http_stub_status_module.html>`_ for more details.
+To gather metrics from the nginx service, use `/nginx-status`, which replies with information about nginx processes. See the [Nginx status module documentation](https://nginx.org/en/docs/http/ngx_http_stub_status_module.html) for more details.
 
 To gather metrics on the eLabFTW instance itself such as the number of experiments or uploaded files, an OpenMetrics 1.0 endpoint is exposed on `/metrics`. Point your collector such as Prometheus to this endpoint to gather metrics periodically.
 
