@@ -13,7 +13,7 @@ Let's define a few terms first:
 * **Team**: the main unit for a group of users
 * **Sysadmin**: technical role: a user with Sysadmin rights can modify the Instance configuration and create Teams, it is generally the same person that installed the Instance and manages the server.  See the [Sysadmin guide](/docs/usage/sysadmin-guide).
 * **Admin**: a user with Admin rights for a given team has access to the Admin Panel and can manage settings related to their Team. A given user can be Admin in Team A and User in Team B. See the [Admin guide](/docs/usage/admin-guide). Some Admins can also have the right to affect users from other teams.
-* **User**: a user with an account on the Instance, belonging to at least one Team. See the [User guide](user-guide).
+* **User**: a user with an account on the Instance, belonging to at least one Team. See the [User guide](/docs/category/user-guide).
 
 We could also mention the role of **Instance Coordinator**, someone identified by the Users as the person to go to for all things eLab in the institution. It might be Research Data Managers, or a designated Researcher or Engineer that is very familiar with eLabFTW. This person could have access to managing the relationship between users and teams. They could animate the internal chat room related to eLabFTW usage. See the :doc:`Instance Coordinator documentation page <coordinator-guide>`.
 
