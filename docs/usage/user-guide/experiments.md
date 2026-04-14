@@ -74,7 +74,7 @@ An Experiment entry can include many different types of information, such as:
 * Tags
 * Permissions
 * The main text, which can include images, tables, and links
-* Extra fields
+* Custom fields
 * Steps
 * Links to other Experiments or Resources
 * Attachments (uploaded files)

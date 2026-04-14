@@ -9,22 +9,22 @@ This page describes the usage of the metadata JSON field attached to experiments
 
 ## Description
 
-Since eLabFTW 4.0.0, you can add custom JSON data to your entries, using the `metadata` attribute. You can add arbitrary JSON, or use specific keys to extend the customization of the entry, for instance by adding extra fields. Experiments, Items and their templates all have this attribute.
+Since eLabFTW 4.0.0, you can add custom JSON data to your entries, using the `metadata` attribute. You can add arbitrary JSON, or use specific keys to extend the customization of the entry, for instance by adding Custom fields. Experiments, Items and their templates all have this attribute.
 
 ## Getting started
 
-Let's try it on an Experiment. Create a new experiment, and scroll down (in edit mode) to the "Extra fields" part.
+Let's try it on an Experiment. Create a new experiment, and scroll down (in edit mode) to the "Custom fields" part.
 
 Click "Add field", a modal window will appear.
 
 <figure>
-  <img src="/img/extra-field-builder.png" alt="extra-field-builder" />
-  <figcaption>Extra field builder.</figcaption>
+  <img src="/img/extra-field-builder.png" alt="custom-field-builder" />
+  <figcaption>Custom field builder.</figcaption>
 </figure>
 
 If you want your new inputs to appear in groups, you can click the + button next to "Group" to add a new group. Or select an existing group from the dropdown menu.
 
-Then you can select which type of input you want for your extra field. You are free to add as many as you want, of different types. It is most useful to define them in the Templates, so when creating an entry, all the required inputs are already present.
+Then you can select which type of input you want for your custom field. You are free to add as many as you want, of different types. It is most useful to define them in the Templates, so when creating an entry, all the required inputs are already present.
 
 
 ### Example with dropdown menu
@@ -32,15 +32,15 @@ Then you can select which type of input you want for your extra field. You are f
 Let's select "Dropdown menu" for our example. Enter a name for this input, optionally a description and at least 2 entries to select from.
 
 <figure>
-  <img src="/img/extra-fields-dropdown.png" alt="extra-fields-dropdown" />
-  <figcaption>Extra field dropdown.</figcaption>
+  <img src="/img/extra-fields-dropdown.png" alt="custom-fields-dropdown" />
+  <figcaption>Custom field dropdown.</figcaption>
 </figure>
 
-Then click save and the new input (extra field) will appear right under the "Save" and "Save and go back" buttons:
+Then click save and the new input (custom field) will appear right under the "Save" and "Save and go back" buttons:
 
 <figure>
-  <img src="/img/extra-fields-view.png" alt="extra-fields-view" />
-  <figcaption>Extra field view.</figcaption>
+  <img src="/img/extra-fields-view.png" alt="custom-fields-view" />
+  <figcaption>Custom field view.</figcaption>
 </figure>
 
 ### Example with number and units
@@ -49,15 +49,15 @@ In our second example, we will add an input of type `number` with several choice
 
 
 <figure>
-  <img src="/img/extra-fields-number.png" alt="extra-fields-number" />
-  <figcaption>Extra field number.</figcaption>
+  <img src="/img/extra-fields-number.png" alt="custom-fields-number" />
+  <figcaption>Custom field number.</figcaption>
 </figure>
 
 Then click save and the generated input will accept only numbers, and a dropdown menu with a list of available units will be appended to the input:
 
 <figure>
-  <img src="/img/extra-fields-number-view.png" alt="extra-fields-number-view" />
-  <figcaption>Extra field number view.</figcaption>
+  <img src="/img/extra-fields-number-view.png" alt="custom-fields-number-view" />
+  <figcaption>Custom field number view.</figcaption>
 </figure>
 
 
@@ -118,12 +118,12 @@ This will allow you to copy/paste easily the following code block into the edito
 }
 ~~~
 
-Now click Save and scroll up a bit. Above the Steps you should now see four new inputs under the "Extra fields" header. When they are modified, the change is saved immediately.
+Now click Save and scroll up a bit. Above the Steps you should now see four new inputs under the "Custom fields" header. When they are modified, the change is saved immediately.
 
 
 <figure>
-  <img src="/img/extra-fields.png" alt="extra-fields" />
-  <figcaption>Extra fields.</figcaption>
+  <img src="/img/extra-fields.png" alt="custom-fields" />
+  <figcaption>Custom fields.</figcaption>
 </figure>
 
 
@@ -136,7 +136,7 @@ In order to be processed by eLabFTW, the JSON contained in `metadata` must be in
 ~~~bash
 {
  "extra_fields": {
-   "Some extra field name": {
+   "Some custom field name": {
      "type": "date",
      "value": "2023-06-23",
      ...
@@ -216,7 +216,7 @@ An array (`[]`) with different units for the units dropdown element. Requires a 
 An attribute used to store the selected unit, will be updated with a change from the `units` generated dropdown menu.
 
 ### position
-Add a number as a value to correctly order the extra fields how you want them.
+Add a number as a value to correctly order the custom fields how you want them.
 
 ### blank_value_on_duplicate
 Set to `true` for the value to be blanked when the entity is duplicated.
