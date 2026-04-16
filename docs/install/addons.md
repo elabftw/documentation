@@ -36,7 +36,7 @@ Next, configure eLabFTW to use that service by adding four environment variables
 ~~~yaml
 # This service is necessary for the Chemical structure editor (Ketcher)
 - USE_INDIGO=true
-- INDIGO_URL=http://chem-plugin/
+- INDIGO_URL=http://chem-plugin:8080/
 # The fingerprinter is necessary to create a fingerprint of chemical compounds so we can do sub-structure search
 - USE_FINGERPRINTER=true
 - FINGERPRINTER_URL=http://chem-plugin:8000/
