@@ -281,3 +281,12 @@ tail -f /var/lib/mysql/abcd1234.log
 ~~~
 
 This will log ALL queries.
+
+## Accessibility
+
+Tools useful to work on accessibility:
+
+- WAVE plugin: https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/
+- Accessibility tab of firefox dev tools
+- HeadingsMap: https://addons.mozilla.org/en-US/firefox/addon/headingsmap/
+- Accessibility section of Chrome's Lighthouse
