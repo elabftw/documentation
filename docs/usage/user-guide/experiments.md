@@ -397,7 +397,7 @@ For example, let's say there is an experiment "Time travel" that requires certai
 ## Attach a file
 
 <figure>
-  <img src="/img/user-file-uploader.png" alt="user file uploader" />
+  <img src="/img/user-file-uploader.webp" alt="user file uploader" />
   <figcaption>File uploader.</figcaption>
 </figure>
 
@@ -418,6 +418,10 @@ Changes made to any other field are saved automatically, or saved when you click
 
 ## elabid
 In the bottom right part of the Experiment, you can see something like: «Unique elabid: 20150526-e72646c3ecf59b4f72147a52707629150bca0f91». This number is unique to each Experiment, and immutable (won't ever change). You can use it to reference an Experiment with an external database.
+<figure>
+  <img src="/img/experiment-elabib.webp" alt="elabid" />
+  <figcaption>eLab ID.</figcaption>
+</figure>
 
 ## Comments
 People can leave comments on Experiments or Resources. Not everyone can edit your Experiment, but they can leave a comment if they have read access. The owner of the entry along with any other user part of the discussion will receive a notification if someone leaves a comment.
