@@ -126,6 +126,8 @@ For both Experiment and Resource entries, the top part of the page displays a to
   <figcaption>Options for the export of an entry.</figcaption>
 </figure>
 
+The ELN format is a new file format based on RO-Crate specification. It contains a special file (in JSON-LD) describing the contents of the dataset (one or several Experiments). It is designed and promoted by The ELN Consortium, an association of several ELN vendors that agreed on an interchange format for export/import of datasets. Learn more about it here: [TheELNConsortium on GitHub](https://github.com/TheELNConsortium/).
+
 8. **Pin entry**: Clicking this icon will make this entry appear on top of the list on the main page (pin entry). Use this to easily access frequently used entries.
 <figure>
   <img src="/img/experiment-pinned.webp" alt="example of a pinned experiment" />
@@ -514,9 +516,6 @@ This timestamping method uses the [Bloxberg consortium](https://bloxberg.org) bl
 2. we pass it through a cryptographic hash function to get its fingerprint
 3. we add it to the Ethereum-based blockchain
 4. we store the JSON file along with a PDF certifying our data in an immutable ZIP archive (visible if you display archived attachments of a timestamped entry)
-
-The ELN format is a new file format based on RO-Crate specification. It contains a special file (in JSON-LD) describing the contents of the dataset (one or several Experiments). It is designed and promoted by The ELN Consortium, an association of several ELN vendors that agreed on an interchange format for export/import of datasets. Learn more about it here: [TheELNConsortium on GitHub](https://github.com/TheELNConsortium/).
-
 
 ## Archival
 
