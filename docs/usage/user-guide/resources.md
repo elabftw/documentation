@@ -96,7 +96,7 @@ When a Resource is bookable, a new permission appears: "Can book":
   <figcaption>Modify booking permissions.</figcaption>
 </figure>
 
-By default, it will match the `Visibility` permission of the entry, but it can be adjusted to fine tune who exactly has access to this Resource for booking it.
+By default, it will match the `Visibility` permission of the entry, but it can be adjusted to fine-tune who exactly has access to this Resource for booking it.
 
 ## Archiving and deleting resources
 
