@@ -71,38 +71,9 @@ If you wish to edit parameters later on, click on the top right menu with three 
 A modal with various settings opens:
 
 <figure>
-  <img src="/img/modify-booking-modal.webp" alt="modify-booking-modal" />
+  <img src="/img/modify-booking-modal.webp" width="600" alt="modify-booking-modal" />
   <figcaption>Modify booking modal.</figcaption>
 </figure>
-
-### Settings description
-
-| Setting                                             | Description |
-|----------------------------------------------------|------------|
-| Allow booking this Resource                        | This is a general toggle to allow booking of the Resource |
-| Allow overlapping slots                            | Control whether it is allowed to have more than one booking slot at the same time |
-| Maximum slot time (in minutes)                     | Maximum number of minutes allowed for a single booking slot |
-| Maximum per-User future slot allowed               | Number of future slots allowed for a particular User/Resource couple |
-| Allow cancelling a booking slot                    | Control whether Users are allowed to cancel a booking |
-| Minimum time before a slot can be cancelled (in minutes) | If "now" is closer than this number of minutes to the start of the event, it will not be possible to cancel it |
-
-
-## Adjusting permissions
-
-When a Resource is bookable, a new permission appears: "Can book":
-
-<figure>
-  <img src="/img/can-book-setting.webp" width='400' alt="can book settings" />
-  <figcaption>Modify booking permissions.</figcaption>
-</figure>
-
-By default, it will match the `Visibility` permission of the entry, but it can be adjusted to fine-tune who exactly has access to this Resource for booking it.
-
-## Archiving and deleting resources
-
-Resources can be archived or deleted just like experiments. The behavior is the exact same. See [Archival](./experiments#archival) section.
-
-## Scheduler
 
 Once all is set, Users can click the `Book item` button in the toolbar, or select it from the Scheduler page, and click the calendar to drag a booking slot.
 <figure>
@@ -116,89 +87,4 @@ The scheduler page loads with the selected item:
   <figcaption>Selected item in the scheduler page.</figcaption>
 </figure>
 
-You can now drag-and-drop a slot, confirm the "Title" of the event and click the `Create event(s)` button. You can select multiple resources to create many events at the same time.
-<figure>
-  <img src="/img/scheduler-create-events.webp" width='500' alt="scheduler create events modal" />
-  <figcaption>Modal to confirm creation of events.</figcaption>
-</figure>
-
-Once created, you will be able to see a list of your scheduled bookings in the main page (dashboard).
-<figure>
-  <img src="/img/scheduled-bookings.webp" width='500' alt="scheduled bookings in dashboard" />
-  <figcaption>Scheduled bookings in the dashboard.</figcaption>
-</figure>
-
-## Events
-
-On the scheduler page, the items listed are called Events. Clicking an existing slot displays a modal window with different information:
-<figure>
-  <img src="/img/scheduler-event.webp" width="300" alt="scheduler events" />
-  <figcaption>Events in the scheduler.</figcaption>
-</figure>
-
-<figure>
-  <img src="/img/scheduler-event-view.webp" width="700" alt="modal view of an event" />
-  <figcaption>Viewing an event.</figcaption>
-</figure>
-
-The first line indicates the Title (or Comment) of the event. It is defined by the user when creating or editing the event.
-
-Below, the date of the event, the time-slot and duration in minutes.
-
-### Bindings
-
-You can bind the slot to an experiment or a resource. Start typing on the "Search" textbox and select the entry you wish to relate to this event.
-<figure>
-  <img src="/img/scheduler-bind-experiment.webp" width="700" alt="Bind an experiment to an event." />
-  <figcaption>Binding an experiment to the event.</figcaption>
-</figure>
-
-You can then view or unbind the entry.
-<figure>
-  <img src="/img/scheduler-binded.webp" width="700" alt="View or unbind" />
-  <figcaption>View or unbind an experiment.</figcaption>
-</figure>
-
-### Edit an event
-
-Click the `Edit` button to edit an event. You can modify its title and starting/ending hours.
-
-<figure>
-  <img src="/img/scheduler-edit-event.webp" width="700" alt="Edit an event" />
-  <figcaption>Edit an event.</figcaption>
-</figure>
-
-In the scheduler page, you can update an event with the following actions:
-
-- Drag-and-drop: Move the event to the desired start time.
-- Drag (by the end): Move only the ending hour of the event.
-
-<figure>
-  <img src="/img/scheduler-event-actions.gif" alt="Edit an event" />
-  <figcaption>Different actions on an event.</figcaption>
-</figure>
-
-### Cancel an event
-
-Click the `Cancel` button to cancel an event.
-
-<figure>
-  <img src="/img/scheduler-delete-event.webp" width="700" alt="Delete an event" />
-  <figcaption>Delete an event.</figcaption>
-</figure>
-
-You can add a custom message to inform the team members who are connected to this event. You can either send to **Members of the team** or to a list of users who booked this resource in a specific time range.
-
-### Browse events
-
-You can use the filters to reduce clutter on the scheduler view and look for specific events.
-
-<figure>
-  <img src="/img/scheduler-filters-category.webp" alt="filtering by category" />
-  <figcaption>Filtering by category.</figcaption>
-</figure>
-
-<figure>
-  <img src="/img/scheduler-filters-owner.webp" alt="filtering by owner" />
-  <figcaption>Filtering by owner.</figcaption>
-</figure>
+You can now move on to the [Scheduler](./scheduler) section to see how to work with your events.
