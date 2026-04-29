@@ -100,7 +100,7 @@ By default, it will match the `Visibility` permission of the entry, but it can b
 
 ## Archiving and deleting resources
 
-Resources can be archived or deleted just like experiments. The behavior is exactly the same. See [Archival](./experiments#archival) section.
+Resources can be archived or deleted just like experiments. The behavior is the exact same. See [Archival](./experiments#archival) section.
 
 ## Scheduler
 
@@ -187,11 +187,11 @@ Click the `Cancel` button to cancel an event.
   <figcaption>Delete an event.</figcaption>
 </figure>
 
-You can add a custom message to inform the team members who are connected to this event. You can either send to **Members of the team**, or to a list of users who booked this resource in a specific time range.
+You can add a custom message to inform the team members who are connected to this event. You can either send to **Members of the team** or to a list of users who booked this resource in a specific time range.
 
 ### Browse events
 
-You can use the filters to lighten the scheduler's view and look for specific events.
+You can use the filters to reduce clutter on the scheduler view and look for specific events.
 
 <figure>
   <img src="/img/scheduler-filters-category.webp" alt="filtering by category" />
