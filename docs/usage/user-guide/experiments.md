@@ -303,20 +303,20 @@ Examples:
 You can use steps to list actions that need to be taken in connection with a given Experiment or Resource. When a task has been completed, you can click on the corresponding checkbox to indicate that that step is done. The "Next step" for each Experiment or Resource will be shown on the main Experiments or Resources page (index list) under the title for that entry. This lets you easily view the next step for each entry. You can also view the next steps for your Experiments and Resources by clicking on the "To-Do List" icon at the top left side of the main page.
 
 <figure>
-  <img src="/img/steps-on-experiment.webp" alt="steps on experiment" />
+  <img src="/img/steps-on-experiment.webp" width="700" alt="steps on experiment" />
   <figcaption>Steps on an experiment.</figcaption>
 </figure>
 
 You can also add steps when creating a template, and choose to lock them.
 
 <figure>
-  <img src="/img/steps-on-template-locked.webp" alt="steps on template" />
+  <img src="/img/steps-on-template-locked.webp" width="700" alt="steps on template" />
   <figcaption>Steps on a template with lock toggle.</figcaption>
 </figure>
 
 When a new Experiment or Resource is created from that template, the locked steps will appear as read-only and cannot be modified or deleted.
 <figure>
-  <img src="/img/steps-locked-down.webp" alt="steps locked down in an experiment" />
+  <img src="/img/steps-locked-down.webp" width="700" alt="steps locked down in an experiment" />
   <figcaption>Locked-down steps when an experiment is created from a template.</figcaption>
 </figure>
 
@@ -325,7 +325,7 @@ When a new Experiment or Resource is created from that template, the locked step
 With version 5.3 comes a new spreadsheet editor, present in the edit page of an entry. It lets users display and manipulate tabular data directly inside eLabFTW, with support for common spreadsheet operations and formula calculations (e.g. CSV / XLSX import-export, cell arithmetic, SUM, ROW, etc.).
 
 <figure>
-  <img src="/img/spreadsheet-editor.png" alt="spreadsheet editor" />
+  <img src="/img/spreadsheet-editor.webp" alt="spreadsheet editor" />
   <figcaption>Editing tabular data within eLabFTW.</figcaption>
 </figure>
 
