@@ -130,7 +130,7 @@ Once created, you will be able to see a list of your scheduled bookings in the m
 
 ## Events
 
-On the scheduler page, the items listed are called Events. Clicking an existing slot displays a modal window with different informations:
+On the scheduler page, the items listed are called Events. Clicking an existing slot displays a modal window with different information:
 <figure>
   <img src="/img/scheduler-event.webp" width="300" alt="scheduler events" />
   <figcaption>Events in the scheduler.</figcaption>
