@@ -61,7 +61,7 @@ A modal window appears, allowing you to enter a title and optionally select an e
 This modal window will select the type of entry (Experiment/Resource and their Templates) depending on which page it was clicked from. You can still change it manually afterwards.
 :::
 
-This is the view mode of an experiment with filled informations.
+This is the view mode of an experiment with filled-in information.
 
 <figure>
   <img src="/img/experiment-view.webp" alt="view experiment" />
@@ -512,17 +512,8 @@ This timestamping method uses the [Bloxberg consortium](https://bloxberg.org) bl
 
 1. we first generate a JSON export of the entity, containing all the data relevant to that entry
 2. we pass it through a cryptographic hash function to get its fingerprint
-3. we add it to the Ethereum based blockchain
+3. we add it to the Ethereum-based blockchain
 4. we store the JSON file along with a PDF certifying our data in an immutable ZIP archive (visible if you display archived attachments of a timestamped entry)
-
-5. Export button
-
-<figure>
-  <img src="/img/export-options.png" alt="export options" />
-  <figcaption>List of available exports.</figcaption>
-</figure>
-
-The Export menu allows you to save the entry in different file formats.
 
 The ELN format is a new file format based on RO-Crate specification. It contains a special file (in JSON-LD) describing the contents of the dataset (one or several Experiments). It is designed and promoted by The ELN Consortium, an association of several ELN vendors that agreed on an interchange format for export/import of datasets. Learn more about it here: [TheELNConsortium on GitHub](https://github.com/TheELNConsortium/).
 
