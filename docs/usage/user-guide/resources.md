@@ -60,7 +60,7 @@ To make a resource bookable, open its page and click the `Modify booking paramet
   <figcaption>Toolbar: Modify booking parameters.</figcaption>
 </figure>
 
-Once this parameter has been activated, clicking this button same will redirect you to the scheduler with the resource selected.
+Once this parameter has been activated, clicking this same button will redirect you to the scheduler with the resource selected.
 If you wish to edit parameters later on, click on the top right menu with three vertical dots:
 
 <figure>
@@ -100,7 +100,7 @@ By default, it will match the `Visibility` permission of the entry, but it can b
 
 ## Archiving and deleting resources
 
-Resources can be archived or deleted just like experiments. The behavior is exactly the same. See [Archival](./experiments#Archival) section.
+Resources can be archived or deleted just like experiments. The behavior is exactly the same. See [Archival](./experiments#archival) section.
 
 ## Scheduler
 
