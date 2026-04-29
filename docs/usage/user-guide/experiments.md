@@ -419,7 +419,7 @@ Changes made to any other field are saved automatically, or saved when you click
 ## elabid
 In the bottom right part of the Experiment, you can see something like: «Unique elabid: 20150526-e72646c3ecf59b4f72147a52707629150bca0f91». This number is unique to each Experiment, and immutable (won't ever change). You can use it to reference an Experiment with an external database.
 <figure>
-  <img src="/img/experiment-elabib.webp" alt="elabid" />
+  <img src="/img/experiment-elabid.webp" width="500" alt="elabid" />
   <figcaption>eLab ID.</figcaption>
 </figure>
 
@@ -450,10 +450,10 @@ When you click this button, a timestamp archive is created. This is a signed, le
 
 The TSA acknowledges the existence of the data and sends back a signed token, which serves as proof that the data existed at that specific time. This process follows the RFC 3161 standard for Trusted Timestamping.
 
-The timestamped data and corresponding token are then saved in the "Attached Files" section of the entry as a zip file. This file is initially in an "Archived" state, meaning it is hidden from view by default. To view archived files, click the "Show Archived" button on the right side of the "Uploaded Files" section in edit mode:
+The timestamped data and corresponding token are then saved in the "Attached Files" section of the entry as a zip file. This file is initially in an "Archived" state, meaning it is hidden from view by default. To view archived files, click the `Show Archived` button on the right side of the "Uploaded Files" section in edit mode:
 
 <figure>
-  <img src="/img/show-archived-uploads.png" alt="show archived uploads" />
+  <img src="/img/show-archived-uploads.webp" width="200" alt="show archived uploads" />
   <figcaption>Show archived attachments.</figcaption>
 </figure>
 
@@ -534,7 +534,7 @@ The ELN format is a new file format based on RO-Crate specification. It contains
 Experiments can be archived to keep your workspace organized. To archive an experiment, open the entry and click on the "More options" button on the top-right corner of the toolbar and click "Archive":
 
 <figure>
-  <img src="/img/experiments-archive.png" alt="experiment archive" />
+  <img src="/img/experiments-archive.webp" alt="experiment archive" />
   <figcaption>Archive an experiment.</figcaption>
 </figure>
 
@@ -564,14 +564,14 @@ While archived experiments remain viewable, they are read-only. To edit it again
 You can multiselect experiments to unarchive them in bulk:
 
 <figure>
-  <img src="/img/archived-experiments-multiselect.png" alt="experiments multiselect" />
+  <img src="/img/archived-experiments-multiselect.webp" alt="experiments multiselect" />
   <figcaption>Show multiple experiments to perform bulk actions.</figcaption>
 </figure>
 
 Alternatively, you can open an individual archived experiment to review its content. If you decide to restore it, click on the "More options" button located at the top-right corner of the toolbar.
 
 <figure>
-  <img src="/img/archived-experiment-more-options.png" alt="experiment more options" />
+  <img src="/img/archived-experiment-more-options.webp" alt="experiment more options" />
   <figcaption>More options > unarchive.</figcaption>
 </figure>
 
