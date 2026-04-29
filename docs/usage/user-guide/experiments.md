@@ -383,7 +383,7 @@ The linked Experiments/Resources section can be used to view the Resources or Ex
 
 You can also use this feature to organize entries by project, sort of like a folder. For example, you can create a Resource entry for a given project and link all the Experiments and Resources that are associated with that project.
 
-In Edit mode, next to the possibility to **preview the content** of a linked entry **(1)** and to **delete a link (4)**, there are two actions to import content from a linked entry:
+In Edit mode, besides **previewing linked-entry content (1)** and **deleting a link (4)**, you can use two actions to import content from a linked entry:
 
 <figure>
   <img src="/img/user-linked-entries-actions.webp" alt="link actions" />
@@ -439,7 +439,7 @@ This is the protocol defined by RFC 3161, here is how it works:
 3. we request a timestamp token from the Time Stamping Authority (TSA)
 4. we store the JSON file along with the token in an immutable ZIP archive (visible if you display archived attachments of a timestamped entry)
 
-A TSA is a trusted timestamping service that will be used to request a token. Several TSA are already configured in eLabFTW:
+A TSA is a trusted timestamping service that will be used to request a token. Several TSAs are already configured in eLabFTW:
 
 - DFN.de (free academic service, default TSA)
 - Universign (eIDAS qualified, paid service)
