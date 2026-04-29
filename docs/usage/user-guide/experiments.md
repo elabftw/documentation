@@ -88,7 +88,7 @@ An Experiment entry can include many different types of information, such as:
 
 The only required information is the title.
 
-All fields are automatically saved upon change. Only the main text needs to be manually saved by clicking the `Save` button below the Main Text editor. An autosave is triggered 7 seconds after you stopped typing.
+All fields are automatically saved upon change. Only the main text needs to be manually saved by clicking the `Save` button below the Main Text editor. An autosave is triggered 7 seconds after you stop typing.
 
 <figure>
   <img src="/img/experiment-edit.webp" alt="edit experiment" />
