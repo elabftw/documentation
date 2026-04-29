@@ -42,7 +42,7 @@ On the scheduler page, the items listed are called Events. Clicking an existing 
 
 The first line indicates the Title (or Comment) of the event. It is defined by the user when creating or editing the event.
 
-Below, the date of the event, the time-slot and duration in minutes.
+Below are the date of the event, the time slot, and the duration in minutes.
 
 ### Bindings
 

@@ -25,9 +25,9 @@ Resource Categories can be defined at the team level from the "Resource Categori
 * Equipment
 * Projects
 
-Once you have Resources Categories (which are simply composed of the name and a color), you can create a Resource Template with that category assigned. This allows you to have several Resource Templates for a given Category.
+Once you have Resource Categories (which are composed of a name and a color), you can create a Resource Template with that category assigned. This allows you to have several Resource Templates for a given category.
 
-For instance, in the Resource Category "Antibodies", you might want to have a Resource Template for "Primary Antibody" and one for "Secondary Antibody". It's also fine to keep a one-to-one relationship between Resources Templates and Resources Categories.
+For instance, in the Resource Category "Antibodies", you might want a Resource Template for "Primary Antibody" and one for "Secondary Antibody". It's also fine to keep a one-to-one relationship between Resource Templates and Resource Categories.
 
 Resources default permissions allow anyone from the Team to edit them, but you are free to configure them differently from their Template.
 
@@ -51,7 +51,7 @@ It is possible to use the scheduler (calendar) present on the Scheduler page to 
 
 ## Making a Resource bookable
 
-In order to book a Resource, it needs to be bookable. They are not by default.
+To book a Resource, it must be made bookable. Resources are not bookable by default.
 
 To make a resource bookable, open its page and click the `Modify booking parameters` button from the toolbar.
 
