@@ -522,8 +522,7 @@ The ELN format is a new file format based on RO-Crate specification. It contains
 
 ### Archiving an experiment
 
-Experiments can be archived to keep your workspace organized. To archive an experiment, open the entry and click on the "More options" button on the top-right corner of the toolbar and click "Archive":
-
+Experiments can be archived to keep your workspace organized. To archive an experiment, open the entry, click the `More options` button in the top-right corner of the toolbar, then click `Archive`:
 <figure>
   <img src="/img/experiments-archive.webp" alt="experiment archive" />
   <figcaption>Archive an experiment.</figcaption>
