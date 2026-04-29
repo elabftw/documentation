@@ -594,14 +594,14 @@ Deleted experiments can still be accessed and restored, but they remain read-onl
 You can multiselect deleted experiments to restore them in bulk:
 
 <figure>
-  <img src="/img/deleted-experiment-multiselect.png" alt="deleted experiments multiselect" />
+  <img src="/img/deleted-experiment-multiselect.webp" alt="deleted experiments multiselect" />
   <figcaption>Select multiple deleted experiments.</figcaption>
 </figure>
 
 Alternatively, open an individual deleted experiment to review its content. To restore it, click on the "Restore entry" button.
 
 <figure>
-  <img src="/img/deleted-experiment-restore-entry.png" alt="experiment restore" />
+  <img src="/img/deleted-experiment-restore-entry.webp" alt="experiment restore" />
   <figcaption>Restore a deleted experiment.</figcaption>
 </figure>
 
