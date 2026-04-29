@@ -227,7 +227,17 @@ After clicking the "eye" icon for preview:
 
 ### Inserting an image
 
-To insert an image into the main text, simply drag and drop it into the text editor. You can also insert an uploaded image by clicking on the ellipsis menu on the file icon in the "Attached Files" section (three vertical dots on top right) and selecting "Insert in the text at cursor position".
+To insert an image into the main text, simply drag and drop it into the text editor. There is also an icon in the toolbar to open the file browser and select your file.
+<figure>
+  <img src="/img/experiment-tinymce-add-image.webp" width="300" alt="tinymce add an image" />
+  <figcaption>Image icon in the text editor toolbar.</figcaption>
+</figure>
+
+You can also insert an uploaded image by clicking on the ellipsis menu on the file icon in the "Attached Files" section (three vertical dots on top right) and selecting `Insert in the text at cursor position`.
+<figure>
+  <img src="/img/experiment-insert-image.webp" width="400" alt="uploads section insert image" />
+  <figcaption>Insert Image at cursor position in the text editor.</figcaption>
+</figure>
 
 ### Inserting templates
 
