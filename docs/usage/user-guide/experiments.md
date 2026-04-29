@@ -372,24 +372,27 @@ The number of links is unlimited.
 In the Main text, type `#` and begin typing the title of the entry you want to link. After three characters, an autocompletion list will appear. Select the desired entry and press Enter. This entry will automatically be added to the Linked Experiments/Resources section and inserted in the text editor as a hyperlink to the linked entry.
 
 In the Linked Experiments/Resources section, type the title of the entry you wish to link in the appropriate section. Like in the text editor, an autocompletion list will appear. Select the desired entry and press Enter. This entry will automatically be added to the Linked Experiments/Resources section.
+<figure>
+  <img src="/img/experiment-link.gif" alt="link to experiment in text editor" />
+  <figcaption>Adding a link to an experiment from the text editor.</figcaption>
+</figure>
 
 The linked Experiments/Resources section can be used to view the Resources or Experiments that are linked to a given entry. For example, you can view all the Experiments that use a particular Resource by looking at the Linked Experiments section in the entry for that Resource.
 
 You can also use this feature to organize entries by project, sort of like a folder. For example, you can create a Resource entry for a given project and link all the Experiments and Resources that are associated with that project.
 
-Next to the possibility to preview the content of a linked entry (1) and to delete a link (4), in edit mode, there are two actions to import content from a linked entry:
+In Edit mode, next to the possibility to **preview the content** of a linked entry **(1)** and to **delete a link (4)**, there are two actions to import content from a linked entry:
 
 <figure>
   <img src="/img/user-linked-entries-actions.webp" alt="link actions" />
   <figcaption>Import links different actions.</figcaption>
 </figure>
 
-Import Links (2)
-    Links to entries that are present inside a linked entry are copied into the current entry.
-    For example, let's say there is an experiment (Time travel) that requires certain reagents (banana peel and beer) and devices (flux capacitor and Mr. Fusion) which are explained in more detail in the corresponding resource entries. The resources are linked to the experiment. Unfortunately, the experiment does not work the first time, so there is need for a second iteration (Time travel II). Time travel II gets a link to Time travel and now all the required reagents and devices can be imported easily by clicking the "Import Links" button.
+**Import Links (2)**: Copy links from a linked entry into the current entry.
 
-Import Body (3)
-    The text body of a linked entry is copied into the current entry at the cursor position.
+For example, let's say there is an experiment "Time travel" that requires certain reagents (banana peel and beer) and devices (flux capacitor and Mr. Fusion) which are explained in more detail in the corresponding resource entries. The resources are linked to the experiment. Unfortunately, the experiment does not work the first time, so there is need for a second iteration "Time travel II". Time travel II gets a link to Time travel and now all the required reagents and devices can be imported easily by clicking the "Import Links" button.
+
+**Import Body (3)**: The text body of a linked entry is copied into the current entry at the cursor position.
 
 ## Attach a file
 
@@ -402,11 +405,10 @@ Click this region to open the file browser, or drag and drop a file to this regi
 
 Various file types are recognized by eLabFTW:
 
-* molecule files such as cif, pdb, sdf, and mol files: The resulting icon will display the molecule in 2D or 3D
-* DNA files such as FASTA, gb, ape, dna, and gff: These will be displayed via a fully featured viewer
-* image files such as png, jpg, gif, and tiff: These will show as a thumbnail icon
-* pdf files: These are shown as thumbnail icons and can optionally be included in pdf exports
-
+* molecule files such as `cif`, `pdb`, `sdf`, and `mol` files: The resulting icon will display the molecule in 2D or 3D
+* DNA files such as `FASTA`, `gb`, `ape`, `dna`, and `gff`: These will be displayed via a fully featured viewer
+* image files such as `png`, `jpg`, `gif`, and `tiff`: These will show as a thumbnail icon
+* `pdf` files: These are shown as thumbnail icons and can optionally be included in pdf exports
 
 ## Saving your changes
 
