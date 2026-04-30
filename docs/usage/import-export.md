@@ -240,3 +240,13 @@ As a Sysadmin with shell access, you can export an entire team, which can be use
 It will export everything into a .eln file, that you need to copy out of the container. This file can later be re-imported on another instance.
 
 Important note: Import/Export is only supported between instances of the same version, preferably the latest version!
+
+## Third-party tools
+
+### elAPI
+
+The University Computing Centre (URZ, FIRE division) of University of Heidelberg developed a command line tool **elAPI** to facilitate some operations. Have a look: https://github.com/uhd-urz/elAPI/.
+
+### elAPI Plugins
+
+The CRC 1638 at the Heidelberg University Biochemistry Center (BZH) built a tool on top of elAPI to facilitate import/export actions. Have a look: https://github.com/sfb1638/elAPI_Plugins.
