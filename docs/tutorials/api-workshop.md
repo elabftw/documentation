@@ -23,7 +23,7 @@ A full walkthrough of the workshop is available in the video below. It follows t
 
 ## Links
 
-- [API Workshop repository](https://github.com/elabftw/api-workshop/?tab=readme-ov-file#elabftw-api-workshop) <br>➡️ Contains the Jupyter notebooks used in this workshop, along with setup instructions to run them locally or in Google Colab.
-- [API endpoints documentation](https://doc.elabftw.net/api/v2/) <br>➡️ Reference documentation listing all available API endpoints, parameters, and expected responses.
-- [Python library (elabapi-python)](https://github.com/elabftw/elabapi-python) <br>➡️ Official Python client to interact with the eLabFTW API without writing raw HTTP requests.
-- [Python library HTML documentation](https://doc.elabftw.net/api/elabapi-html/) <br>➡️ Detailed documentation of the Python library, including available methods and usage examples.
+- [API Workshop repository](https://github.com/elabftw/api-workshop/?tab=readme-ov-file#elabftw-api-workshop) <br />➡️ Contains the Jupyter notebooks used in this workshop, along with setup instructions to run them locally or in Google Colab.
+- [API endpoints documentation](https://doc.elabftw.net/api/v2/) <br />➡️ Reference documentation listing all available API endpoints, parameters, and expected responses.
+- [Python library (elabapi-python)](https://github.com/elabftw/elabapi-python) <br />➡️ Official Python client to interact with the eLabFTW API without writing raw HTTP requests.
+- [Python library HTML documentation](https://doc.elabftw.net/api/elabapi-html/) <br />➡️ Detailed documentation of the Python library, including available methods and usage examples.
