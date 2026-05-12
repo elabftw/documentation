@@ -74,7 +74,7 @@ Then fill the Custom fields and Main Text with information about the experiment.
 
 ## Using the Structure Editor
 
-Frome the Tools menu, select the "Chemical Structure Editor".
+From the Tools menu, select the "Chemical Structure Editor".
 
 This editor allows you to draw a reaction. You can then save the reaction as RXN file and attach that file to your experiment (we're working on making this step easier without having to download the file).
 
