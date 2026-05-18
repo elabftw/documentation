@@ -214,7 +214,7 @@ Select a base permission to extend or restrict the current settings, and optiona
 
 :::warning
 The permissions are **additive** on the base permission. Make sure to set a restrictive base permission if you do not wish to share an entry, and then **add** teams, teamgroups or users accordingly.
-::::
+:::
 
 ## Main text
 This is the space to freely describe your experimental setting, procedure, results, and any other information you wish to include about your research. In this rich text editor, you can add text with various formatting options, create tables, and add images, links, etc…
