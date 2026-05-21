@@ -41,6 +41,7 @@ See [Links](./experiments#linked-resourcesexperiments) section.
 
 Furthermore, Resources can be made bookable, see section below.
 
+
 ## Booking Resources
 
 It is possible to use the scheduler (calendar) present on the Scheduler page to book Resources.
@@ -49,11 +50,9 @@ It is possible to use the scheduler (calendar) present on the Scheduler page to 
   <figcaption>Scheduler page.</figcaption>
 </figure>
 
-## Making a Resource bookable
+### Making a Resource bookable
 
-To book a Resource, it must be made bookable. Resources are not bookable by default.
-
-To make a resource bookable, open its page and click the `Modify booking parameters` button from the toolbar.
+Resources are not bookable by default. To enable bookings for a resource, open the resource's page and click the `Modify booking parameters` button in the toolbar.
 
 <figure>
   <img src="/img/resource-activate-booking.webp" width="500" alt="activate booking parameters" />
@@ -88,3 +87,42 @@ The scheduler page loads with the selected item:
 </figure>
 
 You can now move on to the [Scheduler](./scheduler) section to see how to work with your events.
+
+## Making a Resource procurable
+
+Resources are not procurable by default. To enable procurement for a resource, you must configure its procurement parameters.
+
+Open the resource you want to make procurable and click the Modify procurement parameters button in the toolbar.
+
+<figure>
+  <img src="/img/resources-make-procurable.webp" width="650" alt="Make a resource procurable" />
+  <figcaption>Make a resource procurable.</figcaption>
+</figure>
+
+In the dialog that opens, enable the procurement option and configure the available procurement settings as needed. Once saved, the resource will be available in the procurement system.
+
+Once procurement is enabled, clicking the same button again will open the procurement modal, allowing you to place an order for the item.
+
+<figure>
+  <img src="/img/resources-proc-request.webp" width="450" alt="Place an order" />
+  <figcaption>Place an order for your item.</figcaption>
+</figure>
+
+After an order is submitted, a confirmation message is displayed on the resource page to inform the requester that the procurement request has been recorded.
+
+<figure>
+    <img src="/img/resources-proc-made.webp" width="900" alt="Procurement request confirmation message" />
+    <figcaption>A confirmation message is displayed after placing a procurement request.</figcaption>
+</figure>
+
+Procurement requests can then be managed from the Team page under the **Procurement requests** tab, where team members can review pending requests, track quantities, and update their status.
+
+<figure>
+    <img src="/img/resources-proc-team-page.webp" width="900" alt="Procurement requests management page" />
+    <figcaption>Manage procurement requests from the Team page.</figcaption>
+</figure>
+
+<figure>
+    <img src="/img/resources-proc-change-state.webp" width="300" alt="Change state of procurement request" />
+    <figcaption>Change state of the procurement request.</figcaption>
+</figure>
