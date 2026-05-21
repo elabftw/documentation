@@ -41,6 +41,53 @@ See [Links](./experiments#linked-resourcesexperiments) section.
 
 Furthermore, Resources can be made bookable, see section below.
 
+
+## Booking Resources
+
+It is possible to use the scheduler (calendar) present on the Scheduler page to book Resources.
+<figure>
+  <img src="/img/scheduler.webp" width="550" alt="Scheduler page" />
+  <figcaption>Scheduler page.</figcaption>
+</figure>
+
+### Making a Resource bookable
+
+Resources are not bookable by default. To enable bookings for a resource, open the resource's page and click the `Modify booking parameters` button in the toolbar.
+
+<figure>
+  <img src="/img/resource-activate-booking.webp" width="500" alt="activate booking parameters" />
+  <figcaption>Toolbar: Modify booking parameters.</figcaption>
+</figure>
+
+Once this parameter has been activated, clicking this same button will redirect you to the scheduler with the resource selected.
+If you wish to edit parameters later on, click on the top right menu with three vertical dots:
+
+<figure>
+  <img src="/img/modify-booking-menu.webp" width="300" alt="modify booking menu" />
+  <figcaption>Modify booking menu.</figcaption>
+</figure>
+
+A modal with various settings opens:
+
+<figure>
+  <img src="/img/modify-booking-modal.webp" width="600" alt="modify-booking-modal" />
+  <figcaption>Modify booking modal.</figcaption>
+</figure>
+
+Once all is set, Users can click the `Book item` button in the toolbar, or select it from the Scheduler page, and click the calendar to drag a booking slot.
+<figure>
+  <img src="/img/book-item-button.webp" width='300' alt="book-item-button" />
+  <figcaption>Booking in item button.</figcaption>
+</figure>
+
+The scheduler page loads with the selected item:
+<figure>
+  <img src="/img/scheduler-selected-item.webp" width='300' alt="scheduler selected item" />
+  <figcaption>Selected item in the scheduler page.</figcaption>
+</figure>
+
+You can now move on to the [Scheduler](./scheduler) section to see how to work with your events.
+
 ## Making a Resource procurable
 
 Resources are not procurable by default. To enable procurement for a resource, you must configure its procurement parameters.
@@ -79,49 +126,3 @@ Procurement requests can then be managed from the Team page under the **Procurem
     <img src="/img/resources-proc-change-state.webp" width="300" alt="Change state of procurement request" />
     <figcaption>Change state of the procurement request.</figcaption>
 </figure>
-
-## Booking Resources
-
-It is possible to use the scheduler (calendar) present on the Scheduler page to book Resources.
-<figure>
-  <img src="/img/scheduler.webp" width="550" alt="Scheduler page" />
-  <figcaption>Scheduler page.</figcaption>
-</figure>
-
-## Making a Resource bookable
-
-Resources are not bookable by default. To enable bookings for a resource, open the resource's page and click the `Modify booking parameters` button in the toolbar.
-
-<figure>
-  <img src="/img/resource-activate-booking.webp" width="500" alt="activate booking parameters" />
-  <figcaption>Toolbar: Modify booking parameters.</figcaption>
-</figure>
-
-Once this parameter has been activated, clicking this same button will redirect you to the scheduler with the resource selected.
-If you wish to edit parameters later on, click on the top right menu with three vertical dots:
-
-<figure>
-  <img src="/img/modify-booking-menu.webp" width="300" alt="modify booking menu" />
-  <figcaption>Modify booking menu.</figcaption>
-</figure>
-
-A modal with various settings opens:
-
-<figure>
-  <img src="/img/modify-booking-modal.webp" width="600" alt="modify-booking-modal" />
-  <figcaption>Modify booking modal.</figcaption>
-</figure>
-
-Once all is set, Users can click the `Book item` button in the toolbar, or select it from the Scheduler page, and click the calendar to drag a booking slot.
-<figure>
-  <img src="/img/book-item-button.webp" width='300' alt="book-item-button" />
-  <figcaption>Booking in item button.</figcaption>
-</figure>
-
-The scheduler page loads with the selected item:
-<figure>
-  <img src="/img/scheduler-selected-item.webp" width='300' alt="scheduler selected item" />
-  <figcaption>Selected item in the scheduler page.</figcaption>
-</figure>
-
-You can now move on to the [Scheduler](./scheduler) section to see how to work with your events.
