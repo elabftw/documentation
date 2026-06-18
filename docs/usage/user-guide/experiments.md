@@ -511,6 +511,8 @@ Extensions:
 
 The "Time stamp" line gives you the timestamp time. The "Hash Algorithm" and "Message data" should correspond to the digest of the data file (the .json). Compare it with: `openssl dgst -sha256 /path/to/X-timestamped.json`
 
+To verify a Universign/Signaturit timestamp, use this script instead: [Verify Universign timestamp script](https://gist.github.com/NicolasCARPi/16869ab2e05e475d89d9e61fd8c4aab6).
+
 
 ### Blockchain Timestamping
 
