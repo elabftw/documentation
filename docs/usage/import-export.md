@@ -9,7 +9,7 @@ title: Import / Export
 
 When users add information into systems like eLabFTW, that information can get trapped in this system. We do not want that. We want information to flow freely.
 
-As such, eLabFTW allows users to freely export and import data, in different file formats, as well as accessing it through a :ref:`public API <api>`, for automation tools.
+As such, eLabFTW allows users to freely export and import data, in different file formats, as well as accessing it through a [public API](/docs/usage/api), for automation tools.
 
 This page describes the Import and Export features available in eLabFTW.
 

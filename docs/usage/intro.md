@@ -53,7 +53,7 @@ A Team generally correspond to a real life research group or service. It is not 
 
 Every Team has one or several Admin, who can change many settings affecting users in the team, such as the default experimental template, categories for database items (Items Types), experiments Status, Tags, etc...
 
-Teams are created by the Sysadmin from the Sysconfig page (:ref:`see documentation <configure-teams>`).
+Teams are created by the Sysadmin from the Sysconfig page ([see documentation](/docs/usage/sysadmin-guide#configure-teams-optional)).
 
 ## Experiments and Resources
 
