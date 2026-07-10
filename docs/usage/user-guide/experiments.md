@@ -114,11 +114,11 @@ For both Experiment and Resource entries, the top part of the page displays a to
   <figcaption>Duplicate modal</figcaption>
 </figure>
 
-4. **Signature**: Add a signature to prove that this entry has been approved by a referenced human. See [Signatures documentation](./misc.md#signatures).
+4. **Signature**: Add a signature to prove that this entry has been approved by a referenced human. See [Signatures documentation](/docs/usage/traceability-and-auditability#electronic-signatures).
 
-5. **RFC3161 Timestamping**: See [RFC 3161 Timestamping section](#rfc-3161-timestamping)
+5. **RFC3161 Timestamping**: See [RFC 3161 Timestamping section](/docs/usage/traceability-and-auditability#trusted-timestamps)
 
-6. **Blockchain timestamping**: See [Blockchain Timestamping section](#blockchain-timestamping)
+6. **Blockchain timestamping**: See [Blockchain Timestamping section](/docs/usage/traceability-and-auditability#blockchain-timestamps)
 
 7. **Export**: Export your entry into different file formats, or to external repositories.
 <figure>
@@ -432,96 +432,6 @@ In the bottom right part of the Experiment, you can see something like: «Unique
 ## Comments
 People can leave comments on Experiments or Resources. Not everyone can edit your Experiment, but they can leave a comment if they have read access. The owner of the entry along with any other user part of the discussion will receive a notification if someone leaves a comment.
 
-## Timestamps
-
-### RFC 3161 Timestamping
-
-This is the protocol defined by RFC 3161, here is how it works:
-
-1. we first generate a JSON export of the entity, containing all the data relevant to that entry
-2. we pass it through a cryptographic hash function to get its fingerprint
-3. we request a timestamp token from the Time Stamping Authority (TSA)
-4. we store the JSON file along with the token in an immutable ZIP archive (visible if you display archived attachments of a timestamped entry)
-
-A TSA is a trusted timestamping service that will be used to request a token. Several TSAs are already configured in eLabFTW:
-
-- DFN.de (free academic service, default TSA)
-- Universign (eIDAS qualified, paid service)
-- Digicert (free)
-- Sectigo (free)
-- GlobalSign (free)
-- Custom: you can define your own service if necessary
-
-When you click this button, a timestamp archive is created. This is a signed, legally binding snapshot of the entry that is stored alongside the attached files in an immutable archive. Timestamping an entry involves generating a full JSON export of the entry and creating a cryptographic hash of that data. This hash is then sent to a trusted third party: the TimeStamping Authority (TSA).
-
-The TSA acknowledges the existence of the data and sends back a signed token, which serves as proof that the data existed at that specific time. This process follows the RFC 3161 standard for Trusted Timestamping.
-
-The timestamped data and corresponding token are then saved in the "Attached Files" section of the entry as a zip file. This file is initially in an "Archived" state, meaning it is hidden from view by default. To view archived files, click the `Show Archived` button on the right side of the "Uploaded Files" section in edit mode:
-
-<figure>
-  <img src="/img/show-archived-uploads.webp" width="200" alt="show archived uploads" />
-  <figcaption>Show archived attachments.</figcaption>
-</figure>
-
-This timestamp archive is immutable and cannot be modified or deleted.
-
-<figure>
-  <img src="/img/timestamp-archive.png" alt="timestamp archive" />
-  <figcaption>The archived ZIP file.</figcaption>
-</figure>
-
-#### Verifying the timestamp
-
-To verify locally the validity of the timestamp, you can use `openssl` with a command similar to:
-
-~~~bash
-openssl ts -verify -CAfile /etc/ssl/cert.pem -data /path/to/X-timestamped.json -in /path/to/X-timestamped.asn1 -text
-~~~
-
-If it was signed with a certificate trusted on your system, it should output "Verification: OK". You can also check the token content directly with:
-
-~~~bash
-openssl ts -reply -in /path/to/X-timestamped.asn1 -text
-~~~
-
-The output should look like:
-
-~~~console
-Using configuration from /etc/ssl/openssl.cnf
-Status info:
-Status: Granted.
-Status description: Operation Okay
-Failure info: unspecified
-
-TST info:
-Version: 1
-Policy OID: 1.3.6.1.4.1.22177.300.22.1
-Hash Algorithm: sha256
-Message data:
-    0000 - 5a 58 7b 86 c3 a6 79 27-35 b8 4d 57 bc 5a 7e 80   ZX{...y'5.MW.Z~.
-    0010 - 52 89 92 60 0b 8d 03 d4-f2 9e 4a 4c 6d ec 91 a4   R..`......JLm...
-Serial number: 0xCDAB07382DF7B1BBE0CC970E93A7625B63F4DB7A
-Time stamp: Jul 16 23:07:34 2025 GMT
-Accuracy: unspecified
-Ordering: no
-Nonce: unspecified
-TSA: unspecified
-Extensions:
-~~~
-
-The "Time stamp" line gives you the timestamp time. The "Hash Algorithm" and "Message data" should correspond to the digest of the data file (the .json). Compare it with: `openssl dgst -sha256 /path/to/X-timestamped.json`
-
-To verify a Universign/Signaturit timestamp, use this script instead: [Verify Universign timestamp script](https://gist.github.com/NicolasCARPi/16869ab2e05e475d89d9e61fd8c4aab6).
-
-
-### Blockchain Timestamping
-
-This timestamping method uses the [Bloxberg consortium](https://bloxberg.org) blockchain to timestamp your data. Here is how it works:
-
-1. we first generate a JSON export of the entity, containing all the data relevant to that entry
-2. we pass it through a cryptographic hash function to get its fingerprint
-3. we add it to the Ethereum-based blockchain
-4. we store the JSON file along with a PDF certifying our data in an immutable ZIP archive (visible if you display archived attachments of a timestamped entry)
 
 ## Archival
 
