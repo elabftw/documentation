@@ -1,15 +1,17 @@
 ---
 sidebar_position: 8
-title: Metadata
+title: Custom fields
 ---
 
-# Metadata
+# Custom fields (metadata column)
 
-This page describes the usage of the metadata JSON field attached to experiments or items (and their templates).
+This page describes the usage of the custom fields attached to experiments or resources (and their templates).
 
 ## Description
 
-Since eLabFTW 4.0.0, you can add custom JSON data to your entries, using the `metadata` attribute. You can add arbitrary JSON, or use specific keys to extend the customization of the entry, for instance by adding Custom fields. Experiments, Items and their templates all have this attribute.
+Custom fields are a way to add inputs (text, date, dropdown menus, etc...) to your entries. Internally, it corresponds to the `metadata` column in the database and is stored in JSON.
+
+Having these key/value elements allow you to then search for a particular value. For example, you can have a custom field: Temperature, which only allows a value of type Number, and can then do a search such as: "search all experiments where temperature is equal to 12".
 
 ## Getting started
 
@@ -18,11 +20,11 @@ Let's try it on an Experiment. Create a new experiment, and scroll down (in edit
 Click "Add field", a modal window will appear.
 
 <figure>
-  <img src="/img/extra-field-builder.png" alt="custom-field-builder" />
+  <img src="/img/custom-field-builder.webp" alt="custom-field-builder" />
   <figcaption>Custom field builder.</figcaption>
 </figure>
 
-If you want your new inputs to appear in groups, you can click the + button next to "Group" to add a new group. Or select an existing group from the dropdown menu.
+If you want your new inputs to appear in groups, you can click "Manage field groups" and the "Add group" button to add a new group of inputs. Or select an existing group from the dropdown menu.
 
 Then you can select which type of input you want for your custom field. You are free to add as many as you want, of different types. It is most useful to define them in the Templates, so when creating an entry, all the required inputs are already present.
 
@@ -71,7 +73,9 @@ Keep in mind that what the builder menu will do for you is simply create some JS
 </figure>
 
 ## Positions
-In order to assign a particular position to the inputs, use the `position` key, with a number as value. The inputs will then be ordered based on this value. Lowest value being on top. Groups are shown in the position they are defined.
+In order to assign a particular position to the inputs, you can drag them around.
+
+If you are using the API, use the `position` key, with a number as value. The inputs will then be ordered based on this value. Lowest value being on top. Groups are shown in the position they are defined.
 
 ## Removing an input
 If you wish to remove an input, click the trash icon present in edit mode on the right side of the input block.
