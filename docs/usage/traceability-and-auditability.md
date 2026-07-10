@@ -221,3 +221,27 @@ eLabFTW uses a soft-delete mechanism for entries. When you delete an experiment,
 
 Entries can be restored by accessing them directly.
 
+## Audit log
+
+An Audit Log recording sensitive actions in an immutable manner is available on the Sysconfig panel. It records these elements:
+
+- Login
+- Logout
+- AccountCreated
+- AccountValidated
+- AccountArchived
+- AccountDeleted
+- AccountModified
+- PasswordChanged
+- PasswordResetRequested
+- Users2TeamsModified
+- ApiKeyCreated
+- ApiKeyDeleted
+- ConfigModified
+- Export
+- Import
+- OnboardingEmailSent
+- SignatureKeysCreated
+- SignatureCreated
+- ActionRequested
+
