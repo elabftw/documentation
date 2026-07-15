@@ -1,3 +1,9 @@
+# Archived
+
+This repository has moved into main elabftw/elabftw repository.
+
+-------------
+
 # eLabFTW Official Documentation
 
 Source code for doc.elabftw.net, powered by [Docusaurus](https://docusaurus.io/).
